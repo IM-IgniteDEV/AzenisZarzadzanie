@@ -1,0 +1,28 @@
+body {
+	background-color: #CEC1B5;
+}
+#suspect {
+	float: left;
+	width: 160px;
+	height: 160px;
+	background-color: black;
+	margin-right: 50px;
+}
+
+#suspect-info {
+	float: left;
+	width: 160px;
+	height: 160px;
+}
+
+p {
+	margin: 0 0 1 0;
+}
+
+b, .player-info {
+	font-size: 20;
+}
+azenis {
+	color: #A67C00;
+	font-size: 18;
+}
