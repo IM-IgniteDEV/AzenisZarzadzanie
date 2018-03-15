@@ -1,8 +1,6 @@
 function setInfo() {
-	var setNick = document.getElementById("tNick").value;
-	var sNick = document.getElementById("nick").innerHTML;
-	
-	document.getElementById("nick").innerHTML = setNick;
+	var sprawdzNick = document.getElementById("tNick").value;
+	document.getElementById("nick").innerHTML = sprawdzNick;
 }
 function giveBan() {
 	var checkNick = document.getElementById("nick").innerHTML;
