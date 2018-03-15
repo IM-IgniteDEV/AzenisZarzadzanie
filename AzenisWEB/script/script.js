@@ -1,5 +1,5 @@
 function setInfo() {
-	var sprawdzNick = document.getElementById("tNick").value;
+	var sprawdzNick = document.getElementsByName("tNick")[0].value;
 	document.getElementById("nick").innerHTML = sprawdzNick;
 }
 function giveBan() {

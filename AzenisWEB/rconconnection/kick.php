@@ -6,8 +6,8 @@
 	
 	require __DIR__ . '/ServerConnection.php';
     
-    $nick=$_POST['nick'];
-    $kickreason=$_POST['kick-reason'];
+    $nick=@$_POST['nick'];
+    $kickreason=@$_POST['kick-reason'];
 	
 	echo "<pre>";
 	
