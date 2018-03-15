@@ -11,6 +11,8 @@
 		<link rel = "stylesheet" href = "style/style.css">
 		
 	</head>
+
+
 	
 	<body>
 	
@@ -25,14 +27,55 @@
 			<p><b name = "player-info">Ranking:</b> <azenis>500</azenis></p>
 			<p><b name = "player-info">Zabójstwa:</b> <azenis>0</azenis></p>
 			<p><b name = "player-info">Śmierci:</b> <azenis>0</azenis></p>
+			Hello, today is <?php echo date('l, F jS, Y'); ?>.
 		 
 		</div>
 		
-		<div id = "admin-panel"></div>
+		<div id = "admin-panel">
+		
+			<input type="button" id="ban" value="Zbanuj" onclick = "giveBan()">	
+			
+				Wybierz powód, długość bana:
+				
+					<select name="ban-reason">
+					
+						<option></option>
+						<option>Tu wpisz pierwszą możliwość</option>
+						<option>Tu wpisz drugą możliwość</option>
+						
+					</select>
+					
+					<select name="ban-length">
+					
+						<option></option>
+						<option>Tu wpisz pierwszą możliwość</option>
+						<option>Tu wpisz drugą możliwość</option>
+						
+					</select>
+					
+				<br>
+				
+			<input type="button" id="kick" value="Wyrzuć" onclick = "giveKick()">
+			
+				Wybierz powód:
+				
+					<select name="kick-reason">
+					
+						<option></option>
+						<option>Tu wpisz pierwszą możliwość</option>
+						<option>Tu wpisz drugą możliwość</option>
+						
+					</select>
+					
+				<br>
+		
+		
+		
+		</div>
 		
 	</body>
 
 </html>
-		
+
 	
 	
