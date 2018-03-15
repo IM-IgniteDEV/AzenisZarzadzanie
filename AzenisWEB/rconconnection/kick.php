@@ -6,7 +6,8 @@
 	
 	require __DIR__ . '/ServerConnection.php';
     
-    $nick=$_POST['gracz'];
+    $gracz=$_POST['tNick'];
+    $powod=$_POST['kick-reason'];
 	
 	echo "<pre>";
 	
@@ -16,7 +17,7 @@
 		
 		$Rcon->Connect( MQ_SERVER_ADDR, MQ_SERVER_PORT, MQ_SERVER_PASS, MQ_TIMEOUT );
 		
-		$Data = $Rcon->Command("kick nick reason"); 
+		$Data = $Rcon->Command("kick gracz reason"); 
 		
 		if( $Data === false )
 		{
