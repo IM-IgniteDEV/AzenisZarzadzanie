@@ -37,6 +37,6 @@
 	
 	$Rcon->Disconnect( );
 
-$urlthx="azenis.pl";
+$urlthx="http://vps509488.ovh.net/adminpanel.html";
 header("Location: " . $urlthx);
 ?>
