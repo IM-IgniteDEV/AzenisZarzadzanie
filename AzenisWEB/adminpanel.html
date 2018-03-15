@@ -6,36 +6,33 @@
 		
 		<title>Zdalne zarządzanie - Azenis.PL</title>
 		
-		<script type = "javascript/text" src = "script/script.js"></script>
+		<script type = "text/javascript" src = "script/script.js"></script>
 		
 		<link rel = "stylesheet" href = "style/style.css">
 		
 	</head>
 
-
-	
 	<body>
 	
 		<div id = "suspect"></div>
 		
 		<div id = "supect-info">
 			
-			<p><b name = "player-info">UUID:</b> <azenis>26fbb88d79e2461b994f744e7217dc6d</azenis></p>
-			<p><b name = "player-info">Nick:</b> <azenis>Steve</azenis></p>
-			<p><b name = "player-info">Ban:</b> <azenis>Brak</azenis></p>
-			<p><b name = "player-info">Gildia:</b> <azenis>Brak</azenis></p>
-			<p><b name = "player-info">Ranking:</b> <azenis>500</azenis></p>
-			<p><b name = "player-info">Zabójstwa:</b> <azenis>0</azenis></p>
-			<p><b name = "player-info">Śmierci:</b> <azenis>0</azenis></p>
-			Hello, today is <?php echo date('l, F jS, Y'); ?>.
+			<p><b name = "player-info">UUID:</b> <h7 name = "player-info-getted" >26fbb88d79e2461b994f744e7217dc6d</h7> <input type = "text" id = "tNick" style="float:right;"><b style="float:right;">Wyszukaj: </b></p>
+			<p><b name = "player-info">Nick:</b> <h7 name = "player-info-getted" id = "nick">Wyszukaj gracza!</h7> <input type = "submit" style="float:right;" onclick = "setInfo()"></p>
+			<p><b name = "player-info">Ban:</b> <h7 name = "player-info-getted" >Brak</h7> </p>
+			<p><b name = "player-info">Gildia:</b> <h7 name = "player-info-getted" >Brak</h7> </p>
+			<p><b name = "player-info">Ranking:</b> <h7 name = "player-info-getted" >500</h7>	</p>
+			<p><b name = "player-info">Zabójstwa:</b> <h7 name = "player-info-getted" >0</h7>	</p>
+			<p><b name = "player-info">Śmierci:</b> <h7 name = "player-info-getted" >0</h7> </p>
 		 
 		</div>
 		
 		<div id = "admin-panel">
 		
-			<input type="button" id="ban" value="Zbanuj" onclick = "giveBan()">	
+			<input type="button" class = "button button-ban" value="Zbanuj" onclick = "giveBan()">	
 			
-				Wybierz powód, długość bana:
+				<b name = "info">Wybierz powód: </b>
 				
 					<select name="ban-reason">
 					
@@ -48,6 +45,8 @@
 						
 					</select>
 					
+				<b name = "info">Wybierz długość bana:</b>
+				
 					<select name="ban-length">
 					
 						<option></option>
@@ -68,9 +67,9 @@
 					
 				<br>
 				
-			<input type="button" id="kick" value="Wyrzuć" onclick = "giveKick()">
+			<input type="button" class = "button button-kick" value="Wyrzuć" onclick = "giveKick()">
 			
-				Wybierz powód:
+				<b name = "info">Wybierz powód:</b>
 				
 					<select name="kick-reason">
 					
