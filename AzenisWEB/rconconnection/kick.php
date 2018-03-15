@@ -20,7 +20,7 @@
 		$Rcon->Connect( MQ_SERVER_ADDR, MQ_SERVER_PORT, MQ_SERVER_PASS, MQ_TIMEOUT );
 		
 		$Data = $Rcon->Command("kick $nick $kickreason"); 
-		$Data = $Rcon->Command("say $nick $kickreason"); 
+		$Data = $Rcon->Command("say nick kickreason"); 
 		
 		if( $Data === false )
 		{
