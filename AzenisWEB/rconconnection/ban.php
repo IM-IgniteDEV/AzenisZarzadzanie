@@ -6,8 +6,8 @@
 	
 	require __DIR__ . '/ServerConnection.php';
     
-    $nick=$_POST['nickname'];
-	$powod=$_POST['ban-reason'];
+    $nickname=$_POST['player'];
+    $banreason=$_POST['ban-reason'];
 	
 	echo "<pre>";
 	
